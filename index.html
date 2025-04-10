@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        .frame {
+            border: none;
+        }
+        iframe {
+            border: none;
+        }
+        .header {
+            height: 40%;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        marquee {
+            font-size: 24px;
+            color: #333;
+            background-color: #f1f1f1;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <iframe class="frame" src="./header.html" name="headerFrame" style="width: 100%; border: none; height: 30%;" scrolling="no"></iframe>
+    <marquee behavior="scrolling" direction="right">Admission open</marquee>
+    <div style="display: flex; height: 60%;">
+        <iframe src="./menu.html" name="menuFrame" style="width: 20%; height:100%; border: 1;"></iframe>
+        <iframe src="./welcome.html" name="contentFrame" style="width: 80%; height: 100%; border: 1;"></iframe>
+        
+    </div>
+</body>
+</html>
